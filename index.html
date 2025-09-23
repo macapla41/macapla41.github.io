@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cybersecurity Portfolio — Your Name</title>
+  <meta name="description" content="Cybersecurity portfolio showcasing projects, skills, and contact information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --glass: rgba(255,255,255,0.03);
+      --maxw:1000px; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%; margin:0; background:linear-gradient(180deg,#071025 0%, #071826 100%); color:#e6eef6}
+    .wrap{max-width:var(--maxw); margin:40px auto; padding:28px;}
+    header{display:flex; align-items:center; gap:18px}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#4f46e5); display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700;color:#041022}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .grid{display:grid; grid-template-columns:1fr 340px; gap:20px; margin-top:26px}
+    .card{background:var(--card); padding:18px;border-radius:12px; box-shadow: 0 6px 18px rgba(4,6,12,0.6);}
+    .section-title{display:flex;align-items:center; gap:8px; font-weight:600; margin-bottom:10px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{background:var(--glass); padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+
+    .projects{display:grid; gap:12px}
+    .proj{display:block;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); text-decoration:none; color:inherit}
+    .proj:hover{transform:translateY(-4px); box-shadow:0 8px 20px rgba(2,6,23,0.6)}
+    .proj-title{display:flex; justify-content:space-between; align-items:center; gap:10px}
+    .meta{font-size:13px; color:var(--muted)}
+
+    .contact{display:flex;flex-direction:column;gap:8px}
+    .btn{display:inline-block;padding:10px 12px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#7c3aed); color:#041022}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06); color:var(--muted)}
+
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.wrap{margin:20px;padding:16px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">YN</div>
+      <div>
+        <h1>Your Name — Aspiring Cybersecurity Analyst</h1>
+        <p class="lead">Linux | Incident Response | Threat Detection | Penetration Testing • Documenting my learning & lab projects</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <div class="card">
+          <div class="section-title">About</div>
+          <p style="color:var(--muted); margin:10px 0 0;">I am transitioning into cybersecurity from IT operations with hands-on experience in networking, Linux, and security tooling. I focus on practical projects: lab-based incident response, vulnerability scanning, and small-scale red-team exercises. I enjoy documenting processes and building reproducible playbooks.</p>
+        </div>
+
+        <div style="height:16px"></div>
+
+        <div class="card">
+          <div class="section-title">Selected Projects</div>
+          <div class="projects">
+            <a class="proj" href="https://github.com/yourusername/wazuh-setup" target="_blank" rel="noopener">
+              <div class="proj-title">
+                <strong>Wazuh SIEM Lab — Deployment & Rules</strong>
+                <span class="meta">Detection rules, setup scripts</span>
+              </div>
+              <p class="meta" style="margin:6px 0 0">Automated Wazuh and ELK stack deployment on Ubuntu, custom detection rules for common Linux threats, walkthrough guide and sample alerts.</p>
+            </a>
+
+            <a class="proj" href="https://github.com/yourusername/nikto-report-template" target="_blank" rel="noopener">
+              <div class="proj-title">
+                <strong>Web Vulnerability Scans — Nikto + Report Template</strong>
+                <span class="meta">Recon | Reporting</span>
+              </div>
+              <p class="meta" style="margin:6px 0 0">Reusable HTML report template for Nikto scans. Includes sections for findings, remediation, and evidence suited for small pentest engagements.</p>
+            </a>
+
+            <a class="proj" href="https://github.com/yourusername/linux-hardening" target="_blank" rel="noopener">
+              <div class="proj-title">
+                <strong>Linux Hardening Playbook</strong>
+                <span class="meta">Bash | CIS Benchmarks</span>
+              </div>
+              <p class="meta" style="margin:6px 0 0">Scripts and checklist to harden Ubuntu servers following CIS recommendations. Includes systemd service policies and auditd configurations.</p>
+            </a>
+          </div>
+        </div>
+
+        <div style="height:16px"></div>
+
+        <div class="card">
+          <div class="section-title">Certifications & Training</div>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>CompTIA Security+ (Planned Nov 2025)</li>
+            <li>F1 NGN/FTTH End-to-End Installation</li>
+            <li>Wired & Wireless LAN / FTTH standards</li>
+          </ul>
+        </div>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">Key Skills</div>
+          <div class="skills" style="margin-top:12px">
+            <span class="tag">Linux (Debian/Ubuntu)</span>
+            <span class="tag">Kali Linux</span>
+            <span class="tag">Wazuh / SIEM</span>
+            <span class="tag">Networking / TCP/IP</span>
+            <span class="tag">Penetration Testing</span>
+            <span class="tag">Bash / Scripting</span>
+            <span class="tag">Incident Response</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card">
+          <div class="section-title">Contact</div>
+          <div class="contact">
+            <a class="btn btn-primary" href="https://github.com/yourusername" target="_blank" rel="noopener">View GitHub</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="mailto:youremail@example.com">Email</a>
+            <a class="btn btn-ghost" href="resume.pdf" target="_blank">Download Resume (PDF)</a>
+          </div>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card">
+          <div class="section-title">Availability</div>
+          <p class="meta" style="margin:8px 0 0;color:var(--muted)">Open to entry-level security operations roles and internships. Willing to start at junior level to gain hands-on experience.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>Made with curiosity • GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none">@yourusername</a></div>
+    </footer>
+  </div>
+</body>
+</html>
